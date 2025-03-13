@@ -7,22 +7,31 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="/home.html" rel="import"/>
     <link href="/category.html" rel="import"/>
-    <link href="/catalog.html" rel="import"/>
+    <link href="/catalog_1.html" rel="import"/>
+    <link href="/contacts.html" rel="import"/>
   </head>
-  <body class="bg-dark">
-      <nav class="nav flex-column nav-pills ">
-        <a class=" nav-link border-bottom text-light">Меню</a>
-        <a class="nav-link text-light" href="home.html">Главная</a>
-        <a class="nav-link text-light" href="category.html">Категории</a>
-        <a class="nav-link text-light" href="catalog.html">Заказы</a>
-        <a class="nav-link text-light" href="#">Контакты</a>
-        <li class="nav-item dropdown  position-absolute bottom-0 end-1">
-    <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Пользователь</a>
+  <body class="bg-dark row">
+  <div class="col-2">
+      <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+  <h3 class="text-light border-bottom w-100" >Меню</h3>
+  <input type="button" class="btn-check" name="btnradio"  id="home.html" autocomplete="off">
+  <a class="btn btn-outline text-light"  href="home.html">Главная</a>
+  <input type="button" class="btn-check" name="btnradio" id="category.html" autocomplete="off">
+  <a class="btn btn-outline text-light"  href="category.html">Категории</a>
+  <input type="button" class="btn-check" name="btnradio" id="catalog.html" autocomplete="off">
+  <a class="btn btn-outline text-light" href="catalog.html">Заказы</a>
+  <input type="button" class="btn-check" name="btnradio" id="contacts.html" autocomplete="off">
+  <a class="btn btn-outline text-light" href="contacts.html">Контакты</a>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
+      Пользователь
+    </button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Профиль</a></li>
       <li><a class="dropdown-item" href="#">Выход</a></li>
     </ul>
-  </li>
-    </nav>
+  </div>
+</div>
+    </div>
   </body>
 </html>
